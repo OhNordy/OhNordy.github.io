@@ -11,6 +11,8 @@
 
 <script>
 
+ //Note: randImgURLs and randImgNames are in the same order
+  
 //array of img urls
 var randImgURLs = [
 "https://www.mcgilltribune.com/wp-content/uploads/2014/01/doge.washingonexaminer.biz_-1000x500.jpg",
@@ -30,11 +32,25 @@ var randImgURLs = [
 "https://i.gifer.com/9hip.gif",
 
 ];
+  
+var randImgNames = [
+"DogeMuchWow.jpg",
+"DogeSochi.png",
+"DogeSun.jpeg",
+"DogeToMoon.gif",
+"DogeMoney.gif",
+"DogeDanceTrio.gif",
+"DogeDance.gif",
+"DogeWithIt.gif",
+];
 
 
-//Sets the img element url to one of these images
-document.getElementById("dogeImg").src = randImgURLs[Math.floor(Math.random() * randImgURLs.length)];
+//Sets the img element url to one of these images Nevermind.
+//document.getElementById("dogeImg").src = randImgURLs[Math.floor(Math.random() * randImgURLs.length)];
 
+//Redirects the user to the specific doge image
+window.location.replace("/" + randImgNames[Math.floor(Math.random() * randImgNames.length)] );
+  
 </script>
 
 
