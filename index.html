@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acquire the Doge</title>
+</head>
+<body>
+
+<img id="dogeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOockDYxRMx8w76En7wdPkujM7wGFvO0UrSw&usqp=CAU"> </img>
+
+
+<script>
+
+//array of img urls
+var randImgURLs = [
+"https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Original_Doge_meme.jpg/300px-Original_Doge_meme.jpg",
+
+"https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/1/20/1390229376041/1773f12e-7ddc-4f65-ae31-ef0fbba4f4d4-620x372.png?width=445&quality=45&auto=format&fit=max&dpr=2&s=3bb3a89eac37ee06f8e00497f6f0a7f4",
+
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOockDYxRMx8w76En7wdPkujM7wGFvO0UrSw&usqp=CAU",
+
+"https://media3.giphy.com/media/Ogak8XuKHLs6PYcqlp/giphy.gif",
+
+"https://media.tenor.com/images/da3ae4e941e733e2b862039398f6d954/tenor.gif",
+
+"https://media.tenor.com/images/70c1060284fd1cf41d7f0f49b895d5b7/tenor.gif",
+
+"https://media0.giphy.com/media/9C1nyePnovqlpEYFMD/giphy.gif",
+
+"https://i.gifer.com/9hip.gif",
+
+];
+
+
+//Sets the img element url to one of these images
+document.getElementById("dogeImg").src = randImgURLs[Math.floor(Math.random() * randImgURLs.length)];
+
+</script>
+
+
+
+
+</body>
+</html>
